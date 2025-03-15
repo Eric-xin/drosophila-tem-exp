@@ -1,0 +1,23 @@
+v1 explorer.py
+- Initial version of the Data Explorer application.
+- Basic functionality to load TSV data and display it in a table.
+- Added FlyBase API functions for fetching gene sequences and summaries.
+- Implemented a detail dialog to show gene details with sequence formatting.
+
+v2 explorer_v2.py
+- Improved error handling in FlyBase API functions.
+- Enhanced the detail dialog with a grid layout for better data presentation.
+- Added functionality to copy gene details as JSON to the clipboard.
+- Introduced sorting options for data by location, temperature reading, and temperature ratio.
+
+v3 explorer_v3.py
+- IMPORTANT: Refactored the application to use QTableView with a custom PandasModel for better performance.
+- Added a worker thread class for loading and sorting data asynchronously.
+- Improved the UI with additional controls for sorting and filtering data.
+- Enhanced the detail dialog to fetch and display gene sequences and summaries dynamically.
+
+v3rev explorer_v3rev.py
+- Further improvements to the worker thread class for better error handling.
+- Enhanced the PandasModel to handle missing values and format data more effectively.
+- Improved the detail dialog with better layout and styling for gene sequences.
+- Added a progress dialog for sorting operations to provide better user feedback.

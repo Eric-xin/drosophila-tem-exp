@@ -1,0 +1,17 @@
+v1 analysis.py
+- Initial version of the analysis script.
+- Basic functionality to load allele counts and process FlyBase lookups.
+- Implemented functions to reformat location strings and fetch FlyBase records.
+- Added functionality to calculate allele count averages per temperature group.
+
+v2 analysis_v2.py
+- Improved error handling in FlyBase lookup functions.
+- Enhanced the processing of location strings and FlyBase records.
+- Added functionality to split location data into arm, start, and end.
+- Introduced progress tracking with tqdm for row processing.
+
+v2.5 analysis_v2.5.py
+- IMPORTANT: Added concurrent processing of rows using ProcessPoolExecutor for better performance. [This accelerated the processing of large datasets by parallelizing the work across multiple CPU cores. works really well with the large datasets I have. wuhoo!]
+- Introduced global variables for preloaded databases to be used by worker processes.
+- Improved error handling and logging for database loading.
+- Enhanced the calculation of overall expression averages per temperature group.

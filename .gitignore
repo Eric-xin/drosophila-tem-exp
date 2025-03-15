@@ -1,0 +1,21 @@
+# OS generated files
+.DS_Store
+
+# C++ build
+build/
+*.o
+*.out
+*.exe
+
+# qmake
+.qmake.stash
+
+# icon
+explorer/app/icon
+explorer/app/icon.iconset
+
+# Python build
+*.pyc
+
+# Visual Studio Code
+.vscode/

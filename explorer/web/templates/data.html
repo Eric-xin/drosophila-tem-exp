@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Data Table</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body class="container mt-4">
+    <h1>Data Table</h1>
+    <!-- Render the HTML table produced by Pandas -->
+    <div>
+      {{ table_html | safe }}
+    </div>
+    <p>
+      <!-- For simplicity, assume clicking a row redirects to a detail view. In a full implementation you might add links to each row. -->
+      <a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Upload Another File</a>
+    </p>
+  </body>
+</html>
