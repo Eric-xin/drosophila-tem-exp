@@ -1,3 +1,6 @@
+# Database
+database/*
+
 # OS generated files
 .DS_Store
 
@@ -19,3 +22,4 @@ explorer/app/icon.iconset
 
 # Visual Studio Code
 .vscode/
+tempCodeRunnerFile.py
