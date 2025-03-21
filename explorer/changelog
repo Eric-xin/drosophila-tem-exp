@@ -21,3 +21,19 @@ v3rev explorer_v3rev.py
 - Enhanced the PandasModel to handle missing values and format data more effectively.
 - Improved the detail dialog with better layout and styling for gene sequences.
 - Added a progress dialog for sorting operations to provide better user feedback.
+
+v4 explorer_v4.py
+- Added location filter dialog for filtering genes by genomic location.
+- Improved the main window with additional controls for temperature-based sorting.
+- Enhanced the FlyBase API functions with better error handling and response parsing.
+- Updated the detail dialog to include more gene information and improved sequence formatting.
+
+v5 explorer_v5.py
+- Introduced context menu for table view with options to copy data and view details.
+- Improved the worker thread class for better performance and error handling.
+- Enhanced the PandasModel to support dynamic updates and better data formatting.
+- Added new utility functions for sequence formatting and data processing.
+
+v5rev explorer_v5rev.py
+- Enhanced the detail dialog with better layout and styling for gene sequences.
+- Improved the main window with additional controls for data filtering and sorting.
