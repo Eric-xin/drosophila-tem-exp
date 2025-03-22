@@ -1,25 +1,55 @@
-# Database
+# =============================
+# Database Files
+# =============================
+# Ignore everything in database
 database/*
 
-# OS generated files
+# But don't ignore the index folder
+!database/index/
+
+# Ignore everything in the index folder
+database/index/*
+
+# Except for the index.md file
+!database/index/index.md
+
+# =============================
+# Operating System Generated Files
+# =============================
 .DS_Store
 
-# C++ build
+# =============================
+# C++ Build Artifacts
+# =============================
 build/
 *.o
 *.out
 *.exe
 
-# qmake
+# =============================
+# qmake Artifacts
+# =============================
 .qmake.stash
 
-# icon
+# =============================
+# Application Icons
+# =============================
 explorer/app/icon
 explorer/app/icon.iconset
 
-# Python build
+# =============================
+# Python Build Artifacts
+# =============================
 *.pyc
 
-# Visual Studio Code
+# =============================
+# Visual Studio Code Settings
+# =============================
 .vscode/
 tempCodeRunnerFile.py
+
+# =============================
+# Data Files
+# =============================
+data/*
+!data/readme.md
