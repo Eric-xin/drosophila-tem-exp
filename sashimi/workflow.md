@@ -1,7 +1,3 @@
-Below is a revised version of the workflow instructions and accompanying notes:
-
----
-
 ## Sashimi Workflow
 
 1. **Quality Control:**  
@@ -67,3 +63,4 @@ Below is a revised version of the workflow instructions and accompanying notes:
   ```bash
   python ../sashimi/figure.py -b SRR1259380.sorted.bam -c 2R:14600000-14650000 -o ../sashimi/sashimi_plot.png
   ```
+  figure.py is a custom script to make sashimi plots. For better visualization, refer to [command.md](./command.md).

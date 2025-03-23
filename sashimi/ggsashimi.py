@@ -457,11 +457,11 @@ def gtf_for_ggplot(annotation, start, end, arrow_bins):
 
         gtfp = ggplot()
         if (length(ann_list[['introns']]) > 0) {
-                gtfp = gtfp + geom_segment(data=ann_list[['introns']], aes(x=start, xend=end, y=tx, yend=tx), size=0.3)
+                gtfp = gtfp + geom_segment(data=ann_list[['introns']], aes(x=start, xend=end, y=tx, yend=tx), linewidth=0.3)
                 gtfp = gtfp + geom_segment(data=txarrows, aes(x=V1,xend=V2,y=tx,yend=tx), arrow=arrow(length=unit(0.02,"npc")))
         }
         if (length(ann_list[['exons']]) > 0) {
-                gtfp = gtfp + geom_segment(data=ann_list[['exons']], aes(x=start, xend=end, y=tx, yend=tx), size=5, alpha=1)
+                gtfp = gtfp + geom_segment(data=ann_list[['exons']], aes(x=start, xend=end, y=tx, yend=tx), linewidth=5, alpha=1)
         }
         gtfp = gtfp + scale_y_discrete(expand=c(0,0.5))
         gtfp = gtfp + scale_x_continuous(expand=c(0,0.25))
@@ -588,7 +588,7 @@ def make_R_lists(id_list, d, overlay_dict, aggr, intersected_introns):
 
 
 def plot(R_script):
-        p = sp.Popen("/opt/homebrew/anaconda3/envs/R/bin/R --vanilla --slave", shell=True, stdin=sp.PIPE)
+        p = sp.Popen("/opt/homebrew/anaconda3/envs/r-env/bin/R --vanilla --slave", shell=True, stdin=sp.PIPE)
         p.communicate(input=R_script.encode('utf-8'))
         p.stdin.close()
         p.wait()
